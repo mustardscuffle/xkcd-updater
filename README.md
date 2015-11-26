@@ -7,9 +7,13 @@ May only support gmail, haven't tested it yet.
 
 
 Dependencies:
-Python3 \n
-Beautifulsoup4 (bs4) \n
-Smtplib \n
-Datetime \n
-MIMEText \n
+
+Beautifulsoup4 (bs4) 
+
+Smtplib 
+
+Datetime 
+
+MIMEText 
+
 
