@@ -5,7 +5,7 @@ import datetime
 from email.mime.text import MIMEText
 com_url = 'http://xkcd.com/'
 latest = ''
-username = 'EMAIL' #Replace with your email
+username = 'EMAIL@EXAMPLE.COM' #Replace with your email
 password = 'PASSWORD' #replace with your password
 destination = 'DESTINATION' #The destination for the email
 
@@ -48,8 +48,8 @@ def mail(fin_msg):
 
 def build_mail(sen_msg):
     msg = MIMEText(sen_msg.encode('utf-8'), _charset='utf-8')
-    msg["From"] = "spartyupdate@example.com"
-    msg["To"] = "sparty48@example.com"
+    msg["From"] = username
+    msg["To"] = destination
     msg["Subject"] = str(datetime.date.today()) + "'s update"
     mail(msg)
 
