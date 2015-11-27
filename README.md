@@ -18,4 +18,4 @@ Datetime
 MIMEText 
 
 
-*Note:* Includes an optional feature to send a bad pun with every email, un-comment the line in the main function to enable this feature
+*Note:* Includes an optional feature to send a bad pun with every email, un-comment line 71 to enable this feature
