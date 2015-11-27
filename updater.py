@@ -58,16 +58,12 @@ def main():
     send = False
     prep_msg = ''
     comic_url = scrape_com()
-    ap_latest()
     if check_comic(comic_url):
         send = True
     if comic_url != com_url:
         prep_msg += "Your new xkcd can be found at {0}\n\n".format(comic_url)
     else:
-        prep_msg += "Something went wrong, the image can't be found.\n\n"
-    if check_ap(latest):
-        send = True
-        prep_msg += "Here is the latest A.P. Boland Story: \n\n {0}".format(scrape_ap())
+        prep_msg += "Something went wrong, the image can't be found"
     #prep_msg += "Your bad pun today: {0}".format(pun())
     if send:
         build_mail(prep_msg)
