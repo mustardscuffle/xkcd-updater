@@ -5,7 +5,7 @@ import datetime
 from email.mime.text import MIMEText
 com_url = 'http://xkcd.com/'
 latest = ''
-username = 'EMAIL' #Replace with your email
+username = 'EMAIL@EXAMPLE.COM' #Replace with your email
 password = 'PASSWORD' #replace with your password
 destination = 'DESTINATION' #The destination for the email
 
